@@ -1,0 +1,51 @@
+{
+    "validData": {
+            "currentAge": 40,
+            "retirementAge": 65,
+            "currentIncome": 80000,
+            "spouseIncome": 70000,
+            "currentSavings": 200000,
+            "savingsRate": 10,
+            "savingsIncreaseRate": 8,
+            "socialSecurityBenefits": "Yes",
+            "maritalStatus": "Married",
+            "socialSecurityOverrideAmount": 4000,
+            "additionalIncome": 500,
+            "retirementDuration":20,
+            "adjustForInflation": "Yes",
+            "retirementAnnualIncome": 75,
+            "preRetirementReturn": 12,
+            "postRetirementReturn": 5
+        },
+
+   
+    "invalidAgeData": {
+        "retirementAgeLessThanCurrentAge": {
+            "currentAge": 40,
+            "retirementAge": 30,
+            "currentIncome": 50000,
+            "currentSavings": 100000,
+            "savingsRate": 4.5,
+            "savingsIncreaseRate": 2
+        },
+        "retirementAgeEqualToCurrentAge": {
+            "currentAge": 40,
+            "retirementAge": 40,
+            "currentIncome": 50000,
+            "currentSavings": 100000,
+            "savingsRate": 10,
+            "savingsIncreaseRate": 2
+        }
+    },
+
+    "missingMandatoryFieldData": {
+        "missingCurrentAge": {
+            "currentAge": "",
+            "retirementAge": 65,
+            "currentIncome": 50000,
+            "currentSavings": 100000,
+            "savingsRate": 10,
+            "savingsIncreaseRate": 2
+        }
+  }
+}
